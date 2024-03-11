@@ -9,8 +9,8 @@ services:
     image: ffc-sfd-permissions-api-development
     container_name: ffc-sfd-permissions-api-development
     ports:
-      - "3000:3000"
-      - "9229:9229"
+      - "3008:3008"
+      - "9008:9229"
     volumes:
       - ./app:/home/node/app
       - ./test:/home/node/test
