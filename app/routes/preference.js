@@ -2,15 +2,15 @@ module.exports = [
   {
     method: 'GET',
     path: '/preference/{sbi}',
-      handler: (request, h) => {
-        return h.response("ok").code(200)
+      handler: async (request, h) => {
+        return h.response(await db.Preference.findOne({ where: { sbi: request.query.sbi } }))
       }
   },
   {
     method: 'POST',
     path: '/preference',
-      handler: (request, h) => {
-        return h.response("working").code(200)
+      handler: async (request, h) => {
+        return h.response(await db.Preference.create(request.payload))
       }
     }
 ]
