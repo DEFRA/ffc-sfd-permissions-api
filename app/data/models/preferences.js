@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
-  return sequelize.define('preferences', {
+  return sequelize.define('preference', {
     sbi: { type: DataTypes.INTEGER, primaryKey: true },
-    preferenceType: DataTypes.STRING
+    preference: DataTypes.STRING
   },
   {
     tableName: 'preferences',
