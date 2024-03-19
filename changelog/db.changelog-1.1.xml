@@ -5,10 +5,10 @@
     </changeSet>
     <changeSet author="liquibase (generated)" id="1596009647200-2">
         <createTable tableName="preferences">
-            <column name="sbi" type="VARCHAR(255)">
+            <column name="sbi" type="INTEGER">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="preferences_pkey"/>
             </column>
-            <column name="preference" type="string"/>
+            <column name="preference" type="VARCHAR(10)"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>

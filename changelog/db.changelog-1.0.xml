@@ -8,10 +8,11 @@
     </changeSet>
     <changeSet author="liquibase (generated)" id="1596009647200-2">
         <createTable tableName="backend">
-            <column name="id" type="INTEGER">
+            <column name="id" type="VARCHAR(255)">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="claims_pkey"/>
             </column>
-            <column name="name" type="VARCHAR(10)"/>
+            <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>
+
