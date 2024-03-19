@@ -9,8 +9,8 @@ services:
     image: ffc-sfd-permissions-api-development
     container_name: ffc-sfd-permissions-api-development
     ports:
-      - "3000:3000"
-      - "9229:9229"
+      - "3008:3008"
+      - "9008:9229"
     volumes:
       - ./app:/home/node/app
       - ./test:/home/node/test
@@ -19,9 +19,9 @@ services:
   
   ffc-sfd-permissions-api-postgres:
     ports:
-      - "5432:5432"
+      - "5008:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  postgres_data: {}
