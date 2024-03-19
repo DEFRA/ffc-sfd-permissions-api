@@ -19,7 +19,7 @@ services:
   
   ffc-sfd-permissions-api-postgres:
     ports:
-      - "5441:5432"
+      - "5008:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
