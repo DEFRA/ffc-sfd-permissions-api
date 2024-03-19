@@ -5,7 +5,7 @@ module.exports = [
     method: 'GET',
     path: '/preference/{sbi}',
     handler: async (request, h) => {
-      return h.response(await db.preference.findOne({ where: { sbi: request.params.sbi } }))
+      return h.response({ data: await db.preference.findOne({ where: { sbi: request.params.sbi } }) })
     }
   },
   {
