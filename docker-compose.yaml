@@ -19,7 +19,7 @@ services:
   
 
   ffc-sfd-permissions-api-postgres:
-    image: postgres:11.4-alpine
+    image: postgres:15
     environment:
       POSTGRES_DB: ffc_sfd_permissions_api
       POSTGRES_PASSWORD: ppp
